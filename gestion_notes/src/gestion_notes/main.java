@@ -10,6 +10,7 @@ public class main {
 		e2=new Etudiant(1,"achraf");
 		e3=new Etudiant(2,"adil");
 		e4=new Etudiant(0,"Abdellah");
+		e1.setNote(15);
 				
 		System.out.println(e1);
 		System.out.println(e2);
@@ -17,6 +18,9 @@ public class main {
 		
 		System.out.println(e1.equals(e3));
 		System.out.println(e1.equals(e4));
+		
+		System.out.println(e1.compareTo(e4));
+		System.out.println(e2.compareTo(e3));
 	}
 			
 }
