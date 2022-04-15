@@ -5,6 +5,10 @@ public class Etudiant implements Comparable<Etudiant> {
 	private String nom;
 	private double note;
 	
+	public int getId() {
+		return id;
+	}
+	
 	public double getNote() {
 		return note;
 	}
