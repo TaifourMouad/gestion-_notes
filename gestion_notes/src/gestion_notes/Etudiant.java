@@ -28,6 +28,7 @@ public class Etudiant implements Comparable<Etudiant> {
 		return this.nom+" : "+this.note;
 	}
 
+//redefinition de la methode equals
 	@Override
 	public boolean equals(Object obj) {
 		if(! (obj instanceof Etudiant)) {
@@ -36,10 +37,11 @@ public class Etudiant implements Comparable<Etudiant> {
 		return ((Etudiant)obj).id==this.id;
 	}
 
+//on implement l'interface compare etudiant et on crée la méthode compareTo
 	@Override
 	public int compareTo(Etudiant e) {
 		if(this.note==e.note) return 0;
-		if(this.note>e.note) return 1;
+		else if(this.note>e.note) return 1;
 		return -1;
 	}
 }
